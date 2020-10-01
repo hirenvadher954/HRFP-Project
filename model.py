@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 heart_data = pd.read_csv("data/heart_failure_clinical_records_dataset.csv")
+
 #print(heart_data.head())
 
 
@@ -61,4 +62,4 @@ accuracy_list.append(100*r_acc)
 
 
 def predict(features, r_clf = r_clf):
-    return {"live" : str(r_clf.predict([features]))}
+     return {"live" : str(r_clf.predict([features]))}
