@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from flask_restful import Api, Resource
 import model
-import pyrebase
+
 
 
 app = Flask(__name__)
